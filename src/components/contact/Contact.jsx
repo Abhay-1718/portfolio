@@ -9,7 +9,7 @@ const Contact = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/public/contact.json") 
+    fetch("/contact.json") 
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.log("Error fetching data:", error));
