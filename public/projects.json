@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Webcheat",
+    "image": "/webcheat-logo.png",
+    "description": "A Cheatsheet website for fellow developers",
+    "previewLink": "https://webcheatabhay.vercel.app",
+    "githubLink": "https://github.com/Abhay-1718/webcheat"
+  },
+  {
+    "title": "UrbanAura",
+    "image": "/Ecommerce.png",
+    "description": "A E-Commerce website",
+    "previewLink": "https://urbanauraabhay.vercel.app",
+    "githubLink": "https://github.com/Abhay-1718/UrbanAura"
+  },
+  {
+    "title": "Project 3",
+    "image": "/coming-soon.png",
+    "description": "Coming Soon",
+    "previewLink": "https://example.com/project3-preview",
+    "githubLink": "https://github.com/username/project3"
+  },
+  {
+    "title": "Project 4",
+    "image": "/coming-soon.png",
+    "description": "Coming Soon",
+    "previewLink": "https://example.com/project4-preview",
+    "githubLink": "https://github.com/username/project4"
+  }
+]

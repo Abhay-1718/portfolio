@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dark mode styles */
+@layer base {
+  body {
+    transition: background-color 0.3s ease-in-out;
+  }
+  .dark body {
+    background-color: #1a202c; /* Example dark background */
+    color: #edf2f7; /* Example light text color */
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
