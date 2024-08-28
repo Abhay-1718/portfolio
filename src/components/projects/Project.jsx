@@ -4,7 +4,7 @@ const Project = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('/projects.json')
+    fetch("/public/projects.json")
       .then((response) => response.json())
       .then((data) => setData(data))
       .catch((error) => console.error('Error fetching data:', error));
