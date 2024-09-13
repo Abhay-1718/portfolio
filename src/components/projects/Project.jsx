@@ -24,11 +24,11 @@ const Project = () => {
               key={index}
               className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
             >
-              <div className="relative w-full h-60"> {/* Fixed height for the container */}
+              <div className="relative w-full h-60">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                  className="w-full h-max   transition-transform duration-300 hover:scale-110"
                   style={{ objectFit: 'cover' }} // Ensures the image covers the container
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-30"></div>

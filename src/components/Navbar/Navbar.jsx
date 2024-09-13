@@ -28,7 +28,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo"
-            className="w-24 h-auto object-contain cursor-pointer" // Added cursor-pointer for better UX
+            className="w-24 h-auto object-contain cursor-pointer" 
           />
         </Link>
 
