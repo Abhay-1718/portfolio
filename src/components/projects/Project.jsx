@@ -29,14 +29,14 @@ const Project = () => {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-max   transition-transform duration-300 hover:scale-110"
-                  style={{ objectFit: 'cover' }} // Ensures the image covers the container
+                  style={{ objectFit: 'cover' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-30"></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100">
                   {project.title}
                 </div>
               </div>
-              <div className="p-4 space-y-4"> {/* Adjusted padding */}
+              <div className="p-4 space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
                 <div className="flex space-x-4">
                   <a
