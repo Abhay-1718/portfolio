@@ -17,7 +17,7 @@ const Project = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 pt-24 pb-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-12 text-center text-gray-900 dark:text-gray-100">Projects</h1>
+        <h1 className="text-4xl font-semibold mb-12 text-center text-gray-900 dark:text-gray-100">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {data.map((project, index) => (
             <div
