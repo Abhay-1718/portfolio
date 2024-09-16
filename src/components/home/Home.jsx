@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { FaGithub, FaHtml5, FaCss3Alt, FaBootstrap, FaJava, FaReact, FaGitAlt } from 'react-icons/fa';
+import { FaGithub, FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaGitAlt } from 'react-icons/fa';
 import { IoMail, IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiRedux } from 'react-icons/si';
@@ -43,7 +43,7 @@ const Home = () => {
               <RiTailwindCssFill size={36} color="#38BDF8" />
               <FaBootstrap size={36} color="#563D7C" /> 
               <IoLogoJavascript size={36} color="#F7DF1E" /> 
-              <FaJava  size={36} color="#3776AB" /> 
+              <FaPython  size={36} color="#3776AB" /> 
               <FaReact size={36} color="#61DAFB" />
               <SiRedux size={36} color="#764ABC" /> 
               <FaGitAlt size={36} color="#F05032" /> 
