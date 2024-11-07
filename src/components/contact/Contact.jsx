@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { CiLink } from "react-icons/ci";
-
+import { Spinner } from "@material-tailwind/react";
 
 const Contact = () => {
   const [data, setData] = useState(null);
@@ -16,7 +16,7 @@ const Contact = () => {
   }, []);
 
   if (!data) {
-    return <div className="text-center text-gray-500">Loading...</div>;
+    return <Spinner />;
   }
 
   return (

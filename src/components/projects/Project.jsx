@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Spinner } from "@material-tailwind/react";
 
 const Project = () => {
   const [data, setData] = useState([]);
@@ -11,7 +12,7 @@ const Project = () => {
   }, []);
 
   if (!data.length) {
-    return <div className="text-center text-gray-500">Loading...</div>;
+    return <Spinner />;
   }
 
   return (

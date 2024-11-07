@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
-import { FaGithub, FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaGitAlt } from 'react-icons/fa';
+import {FaNodeJs, FaGithub, FaHtml5, FaCss3Alt, FaBootstrap, FaPython, FaReact, FaGitAlt } from 'react-icons/fa';
+import { DiMongodb } from "react-icons/di";
+import { VscVscode } from "react-icons/vsc";
 import { IoMail, IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiRedux } from 'react-icons/si';
+import { SiRedux, SiExpress, SiPostman } from 'react-icons/si';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -36,17 +38,22 @@ const Home = () => {
             </div>
             <h2 className="text-3xl font-semibold mb-4">{item.subheading}</h2>
             <p className="text-lg leading-relaxed mb-6">{item.paragraph}</p>
-            <h2 className="text-2xl font-semibold mb-4">Technologies</h2>
+            <h2 className="text-2xl font-semibold mb-4">Tools  & Technologies</h2>
             <div className="flex flex-wrap justify-center gap-6 mb-6">
-              <FaHtml5 size={36} color="#E34F26" /> 
-              <FaCss3Alt size={36} color="#1572B6" />
-              <RiTailwindCssFill size={36} color="#38BDF8" />
-              <FaBootstrap size={36} color="#563D7C" /> 
-              <IoLogoJavascript size={36} color="#F7DF1E" /> 
-              <FaPython  size={36} color="#3776AB" /> 
-              <FaReact size={36} color="#61DAFB" />
-              <SiRedux size={36} color="#764ABC" /> 
-              <FaGitAlt size={36} color="#F05032" /> 
+              <FaHtml5 size={36}  /> 
+              <FaCss3Alt size={36}  />
+              <RiTailwindCssFill size={36}  />
+              <FaBootstrap size={36}  /> 
+              <IoLogoJavascript size={36}  /> 
+              <FaPython  size={36}  /> 
+              <FaReact size={36}  />
+              <SiRedux size={36}  /> 
+              <FaGitAlt size={36}  /> 
+              <FaNodeJs size={36}  />
+              <SiExpress size={36}  />
+              <DiMongodb size={36}  />
+              <VscVscode size={36}  />
+              <SiPostman size={36}  />
             </div>
           </div>
         ))}
