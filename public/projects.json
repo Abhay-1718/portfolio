@@ -1,5 +1,11 @@
 [
- 
+  {
+    "title": "Chattrix",
+    "image": "/chattrix-logo.png",
+    "description": "A full-stack chat app",
+    "previewLink": "https://chattrix-frontend.onrender.com",
+    "githubLink": "https://github.com/Abhay-1718/Chattrix"
+  },
   {
     "title": "UrbanAura",
     "image": "/Ecommerce.png",
@@ -14,13 +20,7 @@
     "previewLink": "https://webcheatabhay.vercel.app",
     "githubLink": "https://github.com/Abhay-1718/webcheat"
   },
-  {
-    "title": "Project 3",
-    "image": "/coming-soon.png",
-    "description": "Coming Soon",
-    "previewLink": "https://example.com/project3-preview",
-    "githubLink": "https://github.com/username/project3"
-  },
+  
   {
     "title": "Project 4",
     "image": "/coming-soon.png",

@@ -4,7 +4,7 @@ import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { IoMail, IoLogoJavascript } from 'react-icons/io5';
 import { RiTailwindCssFill } from 'react-icons/ri';
-import { SiRedux, SiExpress, SiPostman } from 'react-icons/si';
+import { SiRedux, SiExpress, SiPostman , SiSocketdotio} from 'react-icons/si';
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -54,6 +54,7 @@ const Home = () => {
               <DiMongodb size={36}  />
               <VscVscode size={36}  />
               <SiPostman size={36}  />
+              <SiSocketdotio  size={36} />
             </div>
           </div>
         ))}
