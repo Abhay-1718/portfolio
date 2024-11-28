@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import {FaNodeJs, FaGithub, FaHtml5, FaCss3Alt, FaBootstrap,  FaReact, FaGitAlt } from 'react-icons/fa';
+import {FaNodeJs, FaGithub, FaHtml5, FaCss3Alt,  FaReact, FaGitAlt } from 'react-icons/fa';
 import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
 import { IoMail, IoLogoJavascript } from 'react-icons/io5';
@@ -43,7 +43,7 @@ const Home = () => {
               <FaHtml5 size={36}  /> 
               <FaCss3Alt size={36}  />
               <RiTailwindCssFill size={36}  />
-              <FaBootstrap size={36}  /> 
+            
               <IoLogoJavascript size={36}  /> 
             
               <FaReact size={36}  />
