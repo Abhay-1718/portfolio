@@ -18,19 +18,21 @@ const Project = () => {
   return (
     <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 pt-24 pb-8">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-semibold mb-12 text-center text-gray-900 dark:text-gray-100">Projects</h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <h1 className="text-4xl font-semibold mb-12 text-center text-gray-900 dark:text-gray-100">
+          Projects
+        </h1>
+        {/* Grid layout: 1 column on small screens, 2 columns on medium screens and up */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
           {data.map((project, index) => (
             <div
               key={index}
               className="bg-white dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden transform transition-transform duration-500 hover:scale-105 hover:shadow-2xl"
             >
-              <div className="relative w-full h-60">
+              <div className="relative w-full h-64">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-max   transition-transform duration-300 hover:scale-110"
-                  style={{ objectFit: 'cover' }}
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-transparent to-black opacity-30"></div>
                 <div className="absolute inset-0 flex items-center justify-center text-white text-lg font-bold opacity-90 transition-opacity duration-300 ease-in-out hover:opacity-100">
@@ -39,7 +41,7 @@ const Project = () => {
               </div>
               <div className="p-4 space-y-4">
                 <p className="text-gray-700 dark:text-gray-300 mb-4">{project.description}</p>
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 flex-wrap">
                   <a
                     href={project.previewLink}
                     className="bg-gradient-to-r from-teal-500 to-teal-600 text-white px-4 py-2 rounded-lg shadow-md hover:from-teal-600 hover:to-teal-700 transition-colors duration-300"
