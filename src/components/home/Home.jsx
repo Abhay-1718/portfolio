@@ -22,28 +22,31 @@ export default function Home() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* Header/Navigation */}
-      <header className="flex items-center justify-between mb-16">
-        <div className="flex items-center gap-2">
-          <div className="w-6 h-6 bg-black rounded-full" />
-          <span className="font-medium">Abhay</span>
-        </div>
+     {/* Header/Navigation */}
+<header className="flex items-center justify-between px-4 py-2 mb-16 flex-wrap">
+  <div className="flex items-center gap-2">
+    <div className="w-6 h-6 bg-black rounded-full" />
+    <span className="font-medium">Abhay</span>
+  </div>
 
-        {/* Navbar for larger screens */}
-        <nav className=" md:flex items-center gap-8">
-          <Link to="/Projects" className="hover:text-gray-600 mr-3">
-            Projects
-          </Link>
-          <Link to="/connect" className="hover:text-gray-600">
-            Connect
-          </Link>
-        </nav>
+  {/* Navbar for all screen sizes */}
+  <nav className="flex items-center gap-8 flex-wrap justify-center md:justify-end">
+    <Link to="/Projects" className="hover:text-gray-600 py-2 px-3">
+      Projects
+    </Link>
+    <Link to="/connect" className="hover:text-gray-600 py-2 px-3">
+      Connect
+    </Link>
+  </nav>
 
-        <a href={Resume}>
-          <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
-            Resume ↓
-          </button>
-        </a>
-      </header>
+  {/* Resume Button */}
+  <a href={Resume}>
+    <button className="bg-black text-white px-4 py-2 rounded-md hover:bg-gray-800">
+      Resume ↓
+    </button>
+  </a>
+</header>
+
 
       {/* Hero Section */}
       <main className="grid md:grid-cols-2 gap-12 mb-20">
