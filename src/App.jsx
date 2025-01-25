@@ -1,42 +1,18 @@
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Layout from './Layout/Layout'
-import Contact from './components/contact/Contact'
-import Projects from './components/projects/Project'
-
-import Home from './components/home/Home'
-import ShimmerEffect from './components/shimmer/Shimmer';
-import  { useState, useEffect } from 'react';
-
-
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Projects from "./components/projects/Projects";
+import Home from "./components/home/Home";
+import Connect from "./components/contact/Connect";
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
- 
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000); 
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) {
-    return <ShimmerEffect/>;
-  }
-
   return (
-    <div style={{ fontFamily: 'Poppins, sans-serif'}}>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="Contact" element={<Contact />} />
+    <div style={{ fontFamily: "Poppins, sans-serif" }}>
+      <Router>
+        <Routes>
           <Route path="Projects" element={<Projects />} />
-        </Route>
-      </Routes>
-    </Router>
+          <Route path="Connect" element={<Connect />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
