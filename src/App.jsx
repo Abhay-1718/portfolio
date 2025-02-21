@@ -3,9 +3,12 @@ import Projects from "./components/projects/Projects";
 import Home from "./components/home/Home";
 import Connect from "./components/contact/Connect";
 
+
+
 function App() {
   return (
     <div style={{ fontFamily: "Poppins, sans-serif" }}>
+      
       <Router>
         <Routes>
           <Route path="Projects" element={<Projects />} />

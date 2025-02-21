@@ -1,10 +1,17 @@
 import SproutLogo from '../../assets/Sprout-logo.png';
 import ChattrixLogo from '../../assets/chattrix-logo.png';
-import EcommerceLogo from '../../assets/Ecommerce.png';
+import CodeKamiLogo from '../../assets/codekamilogo.png';
 import { Link } from 'react-router-dom';
 
 const Projects = () => {
   const projects = [
+    {
+      number: "01",
+      title: "CodeKami",
+      description: "CodeKami is a cutting-edge, full-stack MERN (MongoDB, Express.js, React, Node.js) application designed to revolutionize the way developers review and refine their code. Powered by Google Gemini AI, CodeKami provides an intelligent, automated solution for reviewing code, offering deep insights and feedback to improve quality, performance, and maintainability",
+      image: CodeKamiLogo,
+      link: "https://code-kami-frontend.vercel.app",
+    },
     {
       number: "01",
       title: "Sprout",
@@ -19,13 +26,7 @@ const Projects = () => {
       image: ChattrixLogo,
       link: "https://chattrix-frontend.onrender.com",
     },
-    {
-      number: "03",
-      title: "UrbanAura",
-      description: "E-Commerce Website (MERN Stack) This is a full-stack e-commerce website built with the MERN stack (MongoDB, Express, React, Node.js). The project consists of three main components:",
-      image: EcommerceLogo,
-      link: "https://urban-aura-abhay-frontend.vercel.app",
-    },
+    
   ];
 
   return (
