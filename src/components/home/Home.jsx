@@ -13,6 +13,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import { SiRedux, SiExpress, SiPostman, SiSocketdotio } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 import { VscVscode } from "react-icons/vsc";
+import { FaAws } from "react-icons/fa";
 import Hero from "../../assets/Hero.png";
 import { Link } from "react-router-dom";
 import Aboutmeimg from "../../assets/Aboutme.png";
@@ -164,6 +165,10 @@ export default function Home() {
               name: "Socket.io",
               icon: <SiSocketdotio size={36} className="mx-auto mb-2" />,
             },
+            {
+              name:"AWS EC2",
+              icon: <FaAws  size={36} className="mx-auto mb-2"/>
+            }
           ].map((skill, index) => (
             <div
               key={index}
