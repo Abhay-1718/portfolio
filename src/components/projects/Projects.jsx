@@ -13,14 +13,14 @@ const Projects = () => {
       link: "https://code-kami-frontend.vercel.app",
     },
     {
-      number: "01",
+      number: "02",
       title: "Sprout",
       description: "Sprout is a simple, command-line version control system (VCS) designed for developers to track changes in their codebase. It provides functionality similar to other version control systems, like Git, but in a lightweight and easy-to-use manner.",
       image: SproutLogo,
       link: "https://github.com/Abhay-1718/Sprout-vcs.git",
     },
     {
-      number: "02",
+      number: "03",
       title: "Chattrix",
       description: "This is a full-stack chat application built with the MERN stack (MongoDB, Express, React, Node.js). The app allows users to connect in real-time through a chat interface, leveraging technologies like Socket.IO, JWT authentication, and MongoDB for storing user data.",
       image: ChattrixLogo,
